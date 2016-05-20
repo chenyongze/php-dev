@@ -1,5 +1,7 @@
 <?php
 
+error_log("11111111");
+
 $array['1'] = array('key_a' => 'a', 'key_b' => '2');
 $array['2'] = array('key_a' => 'b', 'key_b' => '1');
 $array['3'] = array('key_a' => 'c', 'key_b' => '1');

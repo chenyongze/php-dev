@@ -22,7 +22,7 @@ require('redis.php');
 //    $data[] = $redis->hGetAll('user'.$id);
 //}
 //
-//dd($data);
+dd($data);
 //==========================================
 
 //string
