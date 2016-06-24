@@ -1,5 +1,6 @@
 <?php
-
+ini_set('memory_limit', '1280M');
+set_time_limit(0);
 
 $worker= new GearmanWorker();
 $worker->addServer();
