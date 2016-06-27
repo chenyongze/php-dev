@@ -15,3 +15,12 @@ Laf is accessible, yet powerful, providing powerful tools needed for large, robu
 ### License
 
 The Laf framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+
+
+
+### 封装思路
+CI 框架提供的基础组件库叫  helpers ，Laravel 使用  illuminate/support  包提供一些可重用的系统函数。
+
+实际上 “illuminate/support” 这个包已经被我们的 ORM 包 “illuminate/database” 依赖了.这个包的中文文档见：http://laravel-
+china.org/docs/helpers

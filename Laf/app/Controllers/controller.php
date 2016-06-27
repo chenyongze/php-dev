@@ -8,9 +8,12 @@
 
 namespace App\Controllers;
 
+use App\Servies\View;
+
 class Controller{
 
     public $smarty;
+    protected $view;
 
     public function __construct()
     {
@@ -31,5 +34,17 @@ class Controller{
         $strUri = $_SERVER['REQUEST_URI'];
         $arrUri = explode('?', $strUri);
         $this->smarty->assign("uri", $arrUri[0]);
+    }
+
+
+    public function __destruct()
+
+    {
+        $view = $this->view;
+        if ( $view instanceof View ) {
+            extract($view->data);
+            require $view->view;
+        }
+
     }
 }
