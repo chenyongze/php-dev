@@ -1,0 +1,31 @@
+{
+    "name": "lychao8/YC",
+    "type": "library",
+    "authors": [
+        {
+            "name": "liycuhao",
+            "email": "lychao_vip@163.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "composer/installers": "~1.0"
+    },
+    "autoload": {
+        "classmap": [
+            "lib/"
+        ],
+        "psr-0": {
+            "YC": ""
+        }
+    },
+    "autoload-dev": {
+
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.phpcomposer.com"
+        }
+    }
+}
