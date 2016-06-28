@@ -21,7 +21,7 @@ function success($data=''){
         'error'  => 0,
     );
     if(!empty($data)){
-        $res['data'] = _toStr($data);
+        $res['data'] = toStr($data);
     }
     header('Content-type: text/json');
     echo json_encode($res, JSON_UNESCAPED_UNICODE);
@@ -48,7 +48,7 @@ function fail($msg,$statusCode=''){
  * @param $arr
  * @return mixed
  */
-function _toStr($arr){
+function toStr($arr){
     foreach($arr as $k => $v){
         if(is_array($v)){
             $arr[$k] = toStr($v);

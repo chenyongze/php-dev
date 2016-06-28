@@ -12,7 +12,7 @@ class XBSmarty extends Smarty {
 
         $this->caching = false;                             //是否使用缓存
         $this->setTemplateDir(APP_PATH . '../views/');      //设置模板目录
-        $this->setCompileDir(APP_PATH . '../data/template_c/');    //设置编译目录
+        $this->setCompileDir(APP_PATH . '/Storage/template_c/');    //设置编译目录
         $this->setConfigDir(APP_PATH . 'config/smarty/');
         $this->setCacheDir(APP_PATH . 'cache/smarty/');     //缓存文件夹
     }

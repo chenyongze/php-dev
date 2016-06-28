@@ -10,6 +10,9 @@
     "type": "project",
     "require": {
         "php": ">=5.5.9",
+        "noahbuscher/macaw": "dev-master",
+        "illuminate/database": "*",
+        "filp/whoops": "*",
         "guzzle/guzzle": "~3.9"
     },
     "require-dev": {
