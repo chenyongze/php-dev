@@ -17,6 +17,7 @@ include 'phpqrcode/phpqrcode.php';
 //第六个参数$saveandprint，保存二维码图片并显示出来，$outfile必须传递图片路径。
 
 
+//$url = "http://dtfy.uifd.buli.site/omg/#yz";
 $url = "http://www.baidu.com";
 $dir = __DIR__.DIRECTORY_SEPARATOR."image".DIRECTORY_SEPARATOR;
 $file_name = "qrcode.png";
@@ -38,16 +39,19 @@ $file = $dir . DIRECTORY_SEPARATOR.$file_name;
 //QRcode::png($url, $file ,$errorCorrectionLevel, $size, $margin,TRUE);
 
 
-if(file_exists($file)){
+//if(file_exists($file)){
+//
+//}else{
+//
+//}
 
-}else{
-    // 保存
-    QRcode::png($url, $file ,$errorCorrectionLevel, $size, $margin);
-}
+// 保存
+QRcode::png($url, $file ,$errorCorrectionLevel, $size, $margin);
 
 
 // 保存带logo的二维码
 $logo = 'logo.png';
+//$logo = 'pp.png';
 if($logo !== FALSE)
 {
     $QR = imagecreatefromstring(file_get_contents($file));
