@@ -14,13 +14,9 @@
     "autoload": {
         "classmap": [
             "lib/"
-        ],
-        "psr-0": {
-            "YC": ""
-        }
+        ]
     },
     "autoload-dev": {
-
     },
     "repositories": {
         "packagist": {
