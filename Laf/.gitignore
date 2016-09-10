@@ -1,5 +1,0 @@
-.idea
-.DS_Store
-vendor
-app/Storage/log/*
-app/Storage/template_c/*
